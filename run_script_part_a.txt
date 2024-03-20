@@ -1,0 +1,3 @@
+It is ipynb file
+
+part_a/a_code -> Shift+ Enter to run each cell

@@ -1,0 +1,39 @@
+Algorithm Name: Nearest Neighbor Algorithm for the Traveling Salesman Problem (TSP)
+
+
+Nearest Neighbor Algorithm:
+
+Initialization:
+
+Choose a starting node (often the depot or a randomly selected node) to begin the tour.
+Mark this node as visited.
+
+Main Loop:
+While there are unvisited nodes:
+For the current node, find the nearest unvisited neighbor.
+Select the nearest neighbor as the next node to visit.
+Move to this neighbor node and mark it as visited.
+Update the current node to be the newly visited neighbor.
+Repeat this process until all nodes (orders) have been visited.
+
+Return to Starting Point:
+Once all nodes have been visited, return to the starting node to complete the tour.
+Add an edge from the last visited node back to the starting node.
+This creates a closed tour, where every node is visited exactly once and the tour ends at the starting point.
+Optimization (Optional):
+
+After completing the initial tour, some variations of the Nearest Neighbor algorithm may perform optimization steps to improve the tour's quality.
+Common optimization techniques include:
+2-opt swaps: Swapping two edges in the tour to potentially reduce the total distance traveled.
+Lin-Kernighan Heuristic: A more advanced local search method for improving tour quality.
+Output:
+
+The output of the algorithm is the sequence of nodes visited during the tour, starting and ending at the chosen starting point.
+This sequence represents the order in which the salesman should visit the cities/customers to minimize the total distance traveled.
+
+
+
+Complexity Analysis:
+The time complexity of the Nearest Neighbor algorithm is O(n^2), where n is the number of nodes (cities/customers) in the TSP instance.
+The space complexity is O(n) due to the need to store visited nodes and the tour sequence.
+
